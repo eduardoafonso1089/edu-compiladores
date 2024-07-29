@@ -1,0 +1,39 @@
+[+-]*[0-9]+\.[0-9]+: Números de ponto flutuante com sinal opcional, e.g., +1.23, -0.45.
+
+[1-9][0-9]*|0: Números inteiros não negativos, e.g., 0, 123.
+
+[A-Z]+: Letras maiúsculas consecutivas, e.g., ABC.
+
+[a-zA-Z_]+: Identificadores que começam com letras ou underscore, e.g., _var, var123.
+
+[a-zA-Z][a-zA-Z0-9_]*: Identificadores típicos em linguagens de programação, e.g., varName.
+
+[az-]+: Strings com 'a', 'z' ou '-', e.g., a, z-, ---.
+
+"[a-z]": Letras minúsculas entre aspas, e.g., "a", "b".
+
+[0-9]+[\t]*\*[\t]*[0-9]+: Expressões de multiplicação com números inteiros, e.g., 2 * 3.
+
+x(cachorro|gato)x: Palavras delimitadas por 'x', e.g., xcachorrox.
+
+cachorro.*gato: Texto que contém 'cachorro' seguido de 'gato', e.g., cachorro e gato.
+
+[gato]: Qualquer caractere 'g', 'a', 't', ou 'o'.
+
+[gato]+: Uma sequência de qualquer combinação de 'g', 'a', 't', e 'o'.
+
+(ab|cd)?(ef)*: Uma combinação opcional de 'ab' ou 'cd' seguida de zero ou mais 'ef'.
+
+(a|b)*a(a|b): Sequências de 'a' ou 'b' terminando em 'a' seguido de 'a' ou 'b'.
+
+(a|b)*a(a|b)(a|b): Como acima, mas terminando com dois caracteres adicionais de 'a' ou 'b'.
+
+(a|b)*a(a|b)(a|b)(a|b): Como acima, mas terminando com três caracteres adicionais de 'a' ou 'b'.
+
+(abcd|abc)/d: 'abcd' ou 'abc' seguido de '/d'.
+
+(a|ab)/ba: 'a' ou 'ab' seguido de '/ba'.
+
+aa*|a*: Uma ou mais 'a' ou zero ou mais 'a'.
+
+[\^\+\-\:\*\]]: Qualquer caractere '^', '+', '-', ':', '*', ou ']'.
